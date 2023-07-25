@@ -1,0 +1,14 @@
+{
+  "name": "bees-website",
+  "version": "1.0.0",
+  "description": "WebSite made for bee's boxes maintenance",
+  "main": "./assets/JS/index.js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Girolimetto Kohler",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^5.7.0"
+  }
+}

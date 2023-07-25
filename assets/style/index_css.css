@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#header {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px 0 105px;
+    box-shadow: 0px 4px 8px #0000001c;
+}
+
+#header h2 {
+    font-family: 'Ubuntu';
+    font-size: 2.23rem;
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+
+div#nav-bar a{
+    margin-right: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+div#nav-bar a#actual {
+    text-decoration: underline solid saddlebrown 2px;
+}
+
+#first-view {
+    width: 100%;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../../SVGs/first-view-image.jpg);
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -1000px 20px 100px #00000087;
+}
+
+#services-explanation {
+    position: absolute;
+    display: flex;
+    color: whitesmoke;
+    font-weight: 100;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.services {
+    width: 20%;
+}
+
+.services img {
+    text-align: start !important;
+    margin-bottom: 15px;
+    color: white;
+}
+
+img {
+    width: 50px;
+}
+
+.services p.service-title {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-align: center !important;
+}
+
+.services p {
+    text-align: center !important;
+}
+
+#announces {
+    background-color: #ffad42;
+    height: 300px;
+    text-align: center;
+    color: black;
+    box-shadow: inset 0px 6px 11px #00000061;
+}
+
+#announces > p#title {
+    margin-bottom: 50px;
+    padding-top: 25px;
+    font-size: 1.5rem;
+}
+
+#announces > #container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container > div#first {
+    width: 25%;
+    margin-left: 10%;
+}
+
+#conversation {
+    position: relative;
+    top: -13%;
+}
+
+#announces > .user {
+    margin-bottom: 50px;
+}
