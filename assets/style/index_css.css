@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Maitree:wght@200;300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Maitree', serif, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 body {
@@ -41,22 +40,32 @@ div#nav-bar a#actual {
     text-decoration: underline solid saddlebrown 2px;
 }
 
-#first-view {
-    width: 100%;
-    height: 560px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-image: url(../../SVGs/first-view-image.jpg);
-    background-repeat: no-repeat;
-    box-shadow: inset 0px -1000px 20px 100px #00000087;
+h1#title {
+    color: white;
+    font-size: 9em;
+    font-weight: 100;
+    padding-top: 7%;
 }
 
-#services-explanation {
+p#text {
+    color: white;
+    font-size: 2em;
+}
+
+#first-view {
+    width: 100%;
+    height: 620px;
+    text-align: center;
+    background-image: url(/assets/SVGs/first-view-image.jpg);
+    background-repeat: no-repeat;
+    box-shadow: inset 0px -1000px 20px 100px #000000be;
+}
+
+/* #services-explanation {
     position: absolute;
     display: flex;
     color: whitesmoke;
-    font-weight: 100;
+    font-weight: 500;
     text-align: center;
     justify-content: space-around;
 }
@@ -70,14 +79,16 @@ div#nav-bar a#actual {
     margin-bottom: 15px;
     color: white;
 }
+ */
 
 img {
     width: 50px;
 }
 
 .services p.service-title {
+    font-family: 'Hina Mincho', serif, initial;
     font-size: 1.2rem;
-    font-weight: 200;
+    font-weight: 500;
     margin-bottom: 15px;
     text-align: center !important;
 }
@@ -90,32 +101,128 @@ img {
     background-color: #ffad42;
     height: 300px;
     text-align: center;
-    color: black;
-    box-shadow: inset 0px 6px 11px #00000061;
+    background-color: white;
+    margin-bottom: 5%;
+}
+
+#announces > * {
+    font-size: 1.37rem;
+    color: rgb(44, 44, 44);
+}
+
+#title > span {
+    color: chocolate;
+    font-weight: 500;
+    text-decoration: underline solid #ffad42 3px;
+    font-family: 'Hina Mincho', serif,  'Ubuntu', monospace, Arial, Helvetica, sans-serif;
 }
 
 #announces > p#title {
-    margin-bottom: 50px;
-    padding-top: 25px;
-    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: .1%;
+    margin-left: 20%;
+    padding-top: .5%;
+    font-size: 1.9rem;
+    font-family: 'Hina Mincho', serif, Arial, Helvetica, sans-serif;
 }
 
 #announces > #container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 #container > div#first {
-    width: 25%;
+    font-family: 'Ubuntu', monospace, initial;
+    width: 50%;
     margin-left: 10%;
 }
 
-#conversation {
+#container > #second {
+    margin-right: 15%;
+}
+
+#money {
+    width: 400px;
+    height: 260px;
+    border-radius: 10px;
+}
+
+#second > #conversation {
     position: relative;
-    top: -13%;
+    top: -50px;
+    width: 13%;
 }
 
 #announces > .user {
     margin-bottom: 50px;
+}
+
+#plans-list {
+    width: 110%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 7%;
+}
+
+.plans {
+    width: 16%;
+    height: 100%;
+    margin-right: 10%;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    padding: 7px 15px;
+    text-align: center;
+    box-shadow: 6px 6px 11px #00000040;
+}
+
+.plan-title {
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.plans > #first {
+    color: crimson;
+}
+
+.plans > #free {
+    color: green;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.plans > .value {
+    margin-bottom: 40px;
+}
+
+ul.plan-benefits {
+    list-style-position: inside;
+}
+
+ul.plan-benefits li.h {
+    list-style-image: url(/assets/SVGs/check-solid.svg);
+}
+
+ul.plan-benefits li.d {
+    list-style-image: url(/assets/SVGs/xmark-solid.svg);
+}
+
+li.a {
+    padding-top: 15%;
+    list-style-type: none;
+}
+
+a.li-a-link {
+    color: rgb(0, 101, 134);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-size: 1.1em;
+}
+
+a.li-a-link:hover {
+    color: rgb(1, 50, 66);
 }
