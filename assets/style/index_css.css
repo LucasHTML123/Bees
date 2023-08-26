@@ -189,9 +189,9 @@ img {
     color: crimson;
 }
 
-.plans > #free {
+.plans > #first-price {
     color: green;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 1.6rem;
 }
 
@@ -225,4 +225,71 @@ a.li-a-link {
 
 a.li-a-link:hover {
     color: rgb(1, 50, 66);
+}
+
+#second {
+    color: crimson;
+}
+
+#second-price {
+    color: green;
+    font-size: 1.39rem;
+    font-weight: 300;
+}
+
+#third {
+    color: crimson;
+}
+
+#third-price {
+    color: green;
+    font-size: 1.39rem;
+    font-weight: 300;
+}
+
+#login {
+    width: 55%;
+    margin: auto;
+    text-align: center;
+}
+
+#login > p {
+    font-size: 1.3rem;
+    margin-bottom: 5%;
+}
+
+#login > button {
+    padding: 5px;
+    border: none;
+    background-color: #ffad42;
+    border-radius: 5px;
+    width: 25%;
+    height: 50px;
+    font-size: 1rem;
+    box-shadow: 5px 5px 18px #0000003d;
+    transition: width .3s ease-in-out, background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#login > button > a {
+    color: black;
+    text-decoration: none;
+}
+
+#login > button:hover {
+    width: 35%;
+    cursor: pointer;
+    background-color: #f7991f;
+    box-shadow: 5px 5px 18px #00000063;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 7%;
+    padding: 1%;
+    background-color: rgb(192, 192, 192);
+}
+
+#footer > p > a {
+    color: black;
+    text-underline-offset: 1.8px;
 }
