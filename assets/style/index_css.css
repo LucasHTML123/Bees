@@ -56,30 +56,10 @@ p#text {
     width: 100%;
     height: 620px;
     text-align: center;
-    background-image: url(/assets/SVGs/first-view-image.jpg);
+    background-image: url(/assets/SVGs/first-view-image.webp);
     background-repeat: no-repeat;
     box-shadow: inset 0px -1000px 20px 100px #000000be;
 }
-
-/* #services-explanation {
-    position: absolute;
-    display: flex;
-    color: whitesmoke;
-    font-weight: 500;
-    text-align: center;
-    justify-content: space-around;
-}
-
-.services {
-    width: 20%;
-}
-
-.services img {
-    text-align: start !important;
-    margin-bottom: 15px;
-    color: white;
-}
- */
 
 img {
     width: 50px;
@@ -98,10 +78,8 @@ img {
 }
 
 #announces {
-    background-color: #ffad42;
     height: 300px;
     text-align: center;
-    background-color: white;
     margin-bottom: 5%;
 }
 
@@ -170,7 +148,6 @@ img {
 
 .plans {
     width: 16%;
-    height: 100%;
     margin-right: 10%;
     background-color: rgb(224, 224, 224);
     border-radius: 10px;
@@ -183,20 +160,14 @@ img {
     font-weight: 400;
     font-size: 2rem;
     margin-bottom: 8px;
-}
-
-.plans > #first {
     color: crimson;
 }
 
-.plans > #first-price {
+.plans > .value {
     color: green;
     font-weight: 300;
-    font-size: 1.6rem;
-}
-
-.plans > .value {
-    margin-bottom: 40px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 ul.plan-benefits {
@@ -225,26 +196,6 @@ a.li-a-link {
 
 a.li-a-link:hover {
     color: rgb(1, 50, 66);
-}
-
-#second {
-    color: crimson;
-}
-
-#second-price {
-    color: green;
-    font-size: 1.39rem;
-    font-weight: 300;
-}
-
-#third {
-    color: crimson;
-}
-
-#third-price {
-    color: green;
-    font-size: 1.39rem;
-    font-weight: 300;
 }
 
 #login {
@@ -287,9 +238,126 @@ a.li-a-link:hover {
     margin-top: 7%;
     padding: 1%;
     background-color: rgb(192, 192, 192);
+    box-shadow: inset 0px 4px 12px #00000066;
 }
 
 #footer > p > a {
     color: black;
     text-underline-offset: 1.8px;
+}
+
+@media screen and (min-width: 1201px){
+    #header h2 {
+        font-size: 3rem;
+    }
+
+    #nav-bar a {
+        font-size: 1.5rem;
+    }
+
+    #first-view {
+        height: 640px;
+    }
+
+    #announces > p#title {
+        font-size: 2.3rem;
+    }
+
+    #container > div#first {
+        font-size: 1.6rem;
+    }
+
+    #container > div#second {
+        margin-right: 0;
+    }
+
+    .plans > .value {
+        font-weight: 400;
+    }
+
+    .plans {
+        width: 20%;
+    }
+
+    ul.plan-benefits {
+        font-size: 1.3rem;
+    }
+
+    #login > p {
+        font-size: 1.7rem;
+    }
+
+    #login > button {
+        width: 35%;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    #footer {
+        font-size: 1.29rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1201px) {
+    #header {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    #header h2 {
+        font-size: 3rem;
+    }
+
+    div#nav-bar {
+        font-size: 1.4rem;
+    }
+
+    #first-view {
+        height: 640px;
+    }
+
+    #announces > p#title {
+        font-size: 2.5rem;
+    }
+
+    #container > div#first {
+        width: 100%;
+        margin-left: 5%;
+        font-size: 1.5rem;
+    }
+
+    #container > #second {
+        margin: 0;
+    }
+
+    #announces {
+        margin-bottom: 10%;
+    }
+
+    .plans {
+        width: 20%;
+    }
+
+    .plans > .value {
+        font-size: 1.65rem;
+        font-weight: 400;
+    }
+
+    ul.plan-benefits {
+        font-size: 1.35rem;
+    }
+
+    #login > p {
+        font-size: 1.7rem;
+    }
+
+    #login > button {
+        width: 35%;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    #footer {
+        font-size: 1.3rem;
+    }
 }
